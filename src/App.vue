@@ -1,26 +1,40 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <headerArea />
+  <div class="block">
+    <menuList />
+    <workArea />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import menuList from './components/MenuTodo.vue'
+import workArea from './components/WorkArea.vue'
+import headerArea from './components/Header.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    menuList,
+    workArea,
+    headerArea,
   }
 }
 </script>
 
 <style>
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+.block {
+  display: flex;
 }
 </style>
