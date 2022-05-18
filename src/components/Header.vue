@@ -26,7 +26,7 @@ export default {
   justify-content: center;
   text-align: end;
   height: 100%;
-  color: #ece7e7;
+  color: #faf8f8;
   padding: 0 30px;
 }
 </style>
